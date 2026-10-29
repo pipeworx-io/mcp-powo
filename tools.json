@@ -1,0 +1,38 @@
+[
+  {
+    "name": "search_plants",
+    "description": "Search POWO (Plants of the World Online, by Kew) — the authoritative global plant taxonomy database — for accepted plant names and synonyms by scientific or common name. Returns matching taxa with their family, rank, whether the name is accepted, and a POWO fqId you can pass to get_taxon. Keyless. Complements GBIF/iNaturalist with curated botanical taxonomy.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Scientific or common plant name, e.g. \"Quercus robur\" or \"English oak\"."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max results to return (default 15)."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "get_taxon",
+    "description": "Fetch a full POWO (Plants of the World Online, by Kew) taxon record by its fqId (e.g. \"urn:lsid:ipni.org:names:304293-2\", obtained from search_plants). Returns the taxon's classification, family/genus, taxonomic status, native distribution (TDWG region codes), accepted-name resolution (for synonyms), and synonym count. Keyless authoritative botanical taxonomy.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "fq_id": {
+          "type": "string",
+          "description": "A POWO fqId like \"urn:lsid:ipni.org:names:304293-2\" (from search_plants results)."
+        }
+      },
+      "required": [
+        "fq_id"
+      ]
+    }
+  }
+]
