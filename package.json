@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-powo",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "POWO (Plants of the World Online, by the Royal Botanic Gardens, Kew) MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "powo",
     "gatewaySlug": "powo",
-    "sourceHash": "v1-50405fbeea9c9c7a8736015025173e907e5a5d170230353890eed7e0438af75c",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-8c7f0a79d72aed9f989cfc177b70ba94ba2e0e6a9bdbd9e286b42842c4c87e41",
+    "sourceCommit": "db27387ed3ef7ec4805d465f7964a7f65f937006"
   }
 }
